@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+   <style type="text/css">
+     .m-r-5 {
+       margin-right: 10px 
+     }
+
+
+   </style>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <title>Segundo Scrip</title>
+  </head>
+  <body>
+    <div class="container">
+       <div class="row">
+         <button class="btn btn-primary" id="btnMostrarOcultar">Mostrar</button>
+         <button class="btn btn-primary" id="btnAgregarParrafo">Agregar</button>
+       </div>
+       <div class="row contenedor-parrafos">
+         <p>Lorem asdfasd asdfasdflaskdfjasdlfasjdkf asdlfkjasdl fads</p>
+       </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+
+    <script>
+         /*
+
+          Selectores : 
+          
+          ID: #id_del_elemento 
+
+          Clase: .clase_del_elemento 
+
+          Etiqueta: Busca cualquier etiqueta ej. div --> busca todas las etiquetas div del documento 
+
+         */
+
+  var agregarParrafo = function(){
+        console.log("agregando parrafo");
+            var nuevoparrafo = $("<p>") ;
+             nuevoparrafo.text("Nuevo  texto de parrafo");
+             $('.contenedor-parrafos').append(nuevoparrafo);
+
+       }
+         
+        $('#btnMostrarOcultar').on('click',mostrarOcultarParrafo);
+        $('#btnAgregarParrafo').on('click',agregarParrafo);
+        
+        function mostrarOcultarParrafo(){
+            $('p').slideToggle(); // Oculta o muestra el contenido del elemento del selector 
+             //slidedown : 
+             // show Muestra el elemento 
+             //slideup : Oculta el elemento 
+             // fadeind: 
+             // fadeout:
+             // hide:  
+             // show:
+        }
+
+     
+       //ECMA6 
+
+       //    $('#btnMostrarOcultar').on('click', ()=>{
+        //      $('p').slideToggle();
+        //    });
+
+
+
+    </script>
+  </body>
+</html>

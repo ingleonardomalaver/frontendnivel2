@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Ejercicio 1</title>
+
+	<!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+	
+	<div class="container">
+	
+
+		<div class="row">
+			<div class="form-group">
+				<label for="txtCantidad">Cantidad:</label>
+				<input type="number" class="form-control" id="txtCantidad">
+			</div>
+			<div class="container text-right">
+				<button id="agregar" class="btn btn-danger">Agregar</button>
+			</div>
+		</div>
+
+	
+			<div id="div-plantilla" class="col-md-2" style="width: 30%;margin-bottom: 10px; " hidden>
+			  <div class="card-body">
+			    <h5 class="card-title">Titulo de la tarjeta</h5>
+			    <p class="card-text">Color de la tarjeta: <span class="color-tarjeta"></span></p>
+			    <a href="#" class="btn btn-danger"  >Borrar</a>
+			  </div>
+			</div>
+          <div class="row"
+			<div id="contenedor">
+			</div>
+			 </div>
+			
+
+		
+	</div>
+
+    
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+
+
+<script>
+	
+
+//Función para obtener un color 'pastel' de forma aleatoria
+
+function obtenerColor(){
+    var r = (Math.round(Math.random()* 127) + 127).toString(16);
+    var g = (Math.round(Math.random()* 127) + 127).toString(16);
+    var b = (Math.round(Math.random()* 127) + 127).toString(16);
+    return '' + r + g + b;
+}
+
+function crear(){
+    console.log("entrando a crear");
+    var cantidad= parseInt($('#txtCantidad').val());
+    var divFuente  = $('#div-plantilla');
+    var contenedor = $('#contenedor');
+    contenedor.html("");
+    console.log("cantidad"+ cantidad);
+   
+    for (var i = 0; i < cantidad; i++) {
+
+    	console.log("mostrando "+ i) ;
+         var tarjetaAdicional = divFuente.clone(true);
+         tarjetaAdicional.removeAttr('hidden');
+         console.log(tarjetaAdicional);
+         var botonEliminar = tarjetaAdicional.find('.btn');   
+         botonEliminar.on('click',eliminarTarjeta);
+         var color = obtenerColor() ;
+
+         console.log("color: " ,color);
+         tarjetaAdicional.css('background','#'+color);
+         contenedor.append(tarjetaAdicional);
+     }
+    	
+}
+
+function eliminarTarjeta(){
+	    console.log("eliminando clase");
+	     $(this).parent().parent().remove();
+	    //tarjetaEliminar.parent().remove();
+	    
+
+
+}
+
+
+
+$('#agregar').on('click',crear);
+</script>
+
+
+
+

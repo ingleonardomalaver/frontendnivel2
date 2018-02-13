@@ -1,0 +1,32 @@
+### TIPS SUBLIME ####
+
+
+Ctr + k + B : Ocultar menu de Sublime 
+
+
+### FIN TIPS SUBLIME ####
+
+
+## CONTENIDO CLASE ######
+
+Fecha: 2018/02/12  
+Tema : Repaso Resumen de capacitación padaga 
+
+
+Web Storm : Ide para desrrollo de JavaScript y HTML , ayuda a autocompletar 
+EMMET : Complemento para completar codigo 
+
+Bootstrap Por defecto divide la pantalla en 12 Columnas 
+
+
+### FIN CONTENIDO CLASE #####
+
+
+
+### ESTANDARES CODIGO ######
+
+Los nomobres de las clases se separan por guiones 
+
+Boostrap es mobile first 
+
+### FIN ESTANDARA CODIGO #####
