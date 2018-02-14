@@ -1,58 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="038cb213-9297-4d4b-b44e-d55644e88823" name="Default" comment="Actualización Ejercicio 2">
-      <change beforePath="" afterPath="$PROJECT_DIR$/dia2/consulta.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dia2/css/bootstrap-grid.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dia2/css/bootstrap-grid.css.map" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dia2/css/bootstrap-grid.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dia2/css/bootstrap-grid.min.css.map" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dia2/css/bootstrap-reboot.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dia2/css/bootstrap-reboot.css.map" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dia2/css/bootstrap-reboot.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dia2/css/bootstrap-reboot.min.css.map" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dia2/css/bootstrap.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dia2/css/bootstrap.css.map" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dia2/css/bootstrap.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dia2/css/bootstrap.min.css.map" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dia2/css/fa-brands.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dia2/css/fa-brands.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dia2/css/fa-regular.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dia2/css/fa-regular.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dia2/css/fa-solid.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dia2/css/fa-solid.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dia2/css/fontawesome-all.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dia2/css/fontawesome-all.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dia2/css/fontawesome.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dia2/css/fontawesome.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dia2/descripcion.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dia2/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dia2/js/bootstrap.bundle.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dia2/js/bootstrap.bundle.js.map" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dia2/js/bootstrap.bundle.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dia2/js/bootstrap.bundle.min.js.map" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dia2/js/bootstrap.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dia2/js/bootstrap.js.map" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dia2/js/bootstrap.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dia2/js/bootstrap.min.js.map" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dia2/js/jquery-3.3.1.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dia2/registro.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dia2/webfonts/fa-brands-400.eot" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dia2/webfonts/fa-brands-400.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dia2/webfonts/fa-brands-400.ttf" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dia2/webfonts/fa-brands-400.woff" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dia2/webfonts/fa-brands-400.woff2" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dia2/webfonts/fa-regular-400.eot" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dia2/webfonts/fa-regular-400.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dia2/webfonts/fa-regular-400.ttf" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dia2/webfonts/fa-regular-400.woff" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dia2/webfonts/fa-regular-400.woff2" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dia2/webfonts/fa-solid-900.eot" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dia2/webfonts/fa-solid-900.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dia2/webfonts/fa-solid-900.ttf" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dia2/webfonts/fa-solid-900.woff" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dia2/webfonts/fa-solid-900.woff2" />
+    <list default="true" id="038cb213-9297-4d4b-b44e-d55644e88823" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/dia2/registro_lmrubio.html" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/dia2/css/bootstrap-grid.css" afterPath="$PROJECT_DIR$/dia2/css/bootstrap-grid.css" />
+      <change beforePath="$PROJECT_DIR$/dia2/registro.html" afterPath="$PROJECT_DIR$/dia2/registro.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -83,11 +36,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bootstrap-grid.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="bootstrap-grid.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dia2/css/bootstrap-grid.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="117">
-              <caret line="99" column="2" lean-forward="false" selection-start-line="99" selection-start-column="2" selection-end-line="99" selection-end-column="2" />
+            <state relative-caret-position="236">
+              <caret line="106" column="0" lean-forward="false" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="registro_lmrubio.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/dia2/registro_lmrubio.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="318">
+              <caret line="232" column="7" lean-forward="false" selection-start-line="232" selection-start-column="7" selection-end-line="232" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="registro.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dia2/registro.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="318">
+              <caret line="232" column="7" lean-forward="false" selection-start-line="232" selection-start-column="7" selection-end-line="232" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -102,6 +75,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/dia_1/dia1_ejercicio_2.html" />
+        <option value="$PROJECT_DIR$/dia2/css/bootstrap-grid.css" />
+        <option value="$PROJECT_DIR$/dia2/registro.html" />
+        <option value="$PROJECT_DIR$/dia2/registro_lmrubio.html" />
       </list>
     </option>
   </component>
@@ -161,10 +137,11 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../frontendnivel2_appfuture" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/dia2" />
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -207,7 +184,7 @@
       <workItem from="1518537035515" duration="7000" />
       <workItem from="1518538128001" duration="2137000" />
       <workItem from="1518560187367" duration="1100000" />
-      <workItem from="1518561538728" duration="4744000" />
+      <workItem from="1518561538728" duration="5594000" />
     </task>
     <task id="LOCAL-00001" summary="Reestructuración de Archivos">
       <created>1518538285104</created>
@@ -223,11 +200,18 @@
       <option name="project" value="LOCAL" />
       <updated>1518539586147</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Actualización Ejercicio 2">
+      <created>1518617206484</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1518617206484</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7988000" />
+    <option name="totallyTimeSpent" value="8838000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="10" y="25" width="1346" height="728" extended-state="0" />
@@ -318,8 +302,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dia2/css/bootstrap-grid.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="99" column="2" lean-forward="false" selection-start-line="99" selection-start-column="2" selection-end-line="99" selection-end-column="2" />
+        <state relative-caret-position="236">
+          <caret line="106" column="0" lean-forward="false" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dia2/registro.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="232" column="7" lean-forward="false" selection-start-line="232" selection-start-column="7" selection-end-line="232" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dia2/registro_lmrubio.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="232" column="7" lean-forward="false" selection-start-line="232" selection-start-column="7" selection-end-line="232" selection-end-column="7" />
           <folding />
         </state>
       </provider>
