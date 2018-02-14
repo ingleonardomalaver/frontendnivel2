@@ -43,7 +43,7 @@
             <div class="form-group col-md-4">
                 <label for="txtCorreo">Correo:</label>
                 <input type="email" class="form-control" id="txtCorreo"
-                       pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" required>
+                       pattern="^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$" required>
             </div>
             <div class="form-group col-md-4">
                 <label for="txtCelular">Celular:</label>
@@ -97,30 +97,11 @@
 
         </div>
     </div>
-
-    <div id="divDatos" class="table-success" hidden>
-        <fieldset><legend>Datos Grabados Session Storage</legend></fieldset>
-        <table id="tblDatos" class="table table-bordered">
-            <thead>
-            <tr>
-                <th>Nombre</th>
-                <td>Apellidos</td>
-                <td>Correo</td>
-                <td>Celular</td>
-                <td>Telefono</td>
-                <td>Tipo Documento</td>
-                <td>Documento</td>
-                <td>Nacionalidad</td>
-                <td>Observaciones</td>
-            </tr>
-            </thead>
-        </table>
-
-    </div>
 </div>
 
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="js/plugins.js"></script>
 
 <script>
 
@@ -143,14 +124,19 @@
     function init(){
         cargarComboTiposDocumento();
         cargarComboPaises();
+
         $('#btnGuardar').on('click', function(){
             validarFormulario( $('#formulario') );
         });
 
-        usuarios = JSON.parse( sessionStorage.getItem('usuarios') );
-        var contenedor = $('#divDatos');
-        var tabla = $('#tblDatos');
-        llenarTabla(contenedor,tabla,usuarios);
+        $('#btnLimpiar').on('click', limpiarFormulario);
+    }
+
+    function limpiarFormulario(){
+        var formulario = $('#formulario');
+        formulario.find('input[type="text"], textarea, input[type="email"]').val('');
+        formulario.find('select').val('-1');
+        formulario.find('input[type="radio"]').prop('checked', false); //Quita la seleccion de radios y checks
     }
 
     function validarFormulario(contenedor){
@@ -168,13 +154,13 @@
             }
         }
         if (mensaje.length > 0){
-            console.log(mensaje);
+            console.error(mensaje);
             return;
         }
         guardarInformacion();
         return;
     }
-
+    
     function guardarInformacion() {
         var usuario = {
             nombre:$('#txtNombre').val(),
@@ -194,13 +180,6 @@
         }
         usuarios.push(usuario);
         sessionStorage.setItem('usuarios', JSON.stringify(usuarios));
-
-        //Llenar Tabla de Datos
-        usuarios = JSON.parse( sessionStorage.getItem('usuarios') );
-        var contenedor = $('#divDatos');
-        var tabla = $('#tblDatos');
-        llenarTabla(contenedor,tabla,usuarios);
-
     }
 
     function obtenerLabel(elemento) {
@@ -213,12 +192,16 @@
             elemento.addClass('is-invalid').removeClass('is-valid');
             return 'El campo <b>'+obtenerLabel(elemento)+'</b> está vacío. <br/>';
         }
-        if (elemento.attr('pattern')!==null){
-            if( ! new RegExp(elemento.attr('pattern')).test(elemento.val()) ){
-                elemento.addClass('is-invalid').removeClass('is-valid');
-                return 'El campo <b>'+obtenerLabel(elemento)+'</b> no cumple. <br/>';
-            }
-        }
+
+       var validacorreo =elemento.validarCorreo() ;
+       if(validacorreo.length>0);
+           return validacorreo ;
+       // if (elemento.attr('pattern')!==null){
+       //     if( ! new RegExp(elemento.attr('pattern')).test(elemento.val()) ){
+       //         elemento.addClass('is-invalid').removeClass('is-valid');
+       //         return 'El campo <b>'+obtenerLabel(elemento)+'</b> no cumple. <br/>';
+       //     }
+       // }
         elemento.removeClass('is-invalid').addClass('is-valid');
         return '';
     }
@@ -233,68 +216,35 @@
     }
 
     function cargarComboTiposDocumento(){
+        /*
         var cmbTipoDocumento = $('#cmbTipoDocumento').empty(); //el metodo empty borra los elementos internos del objeto
         llenarCombo(cmbTipoDocumento, tiposDocumento, 'valor', 'nombre');
+        */
+        $('#cmbTipoDocumento').llenarCombo(tiposDocumento, 'valor', 'nombre');
     }
-
+    
     function cargarComboPaises() {
+        /*
         var cmbNacionalidad = $('#cmbNacionalidad');
         llenarCombo(cmbNacionalidad, paises, 'valor', 'nombre');
+        */
+
+        //Se invoca el plugin de llenarCombo que esta en plugins.js
+        $('#cmbNacionalidad').llenarCombo(paises, 'valor', 'nombre');
     }
 
-    function llenarCombo(combo, datos, valor, texto){
-        combo.empty();
-        combo.append( $('<option>').text('Seleccione una opción').val(-1) );
-        for (var i = 0; i<datos.length; i++){
-            var item = datos[i];
-            var option = $('<option>'); //se crea un objeto option
-            option.val(item[valor]);
-            option.text(item[texto]);
-            combo.append(option);
-        }
-    }
-    function  llenarTabla(contenedor,tabla,datos){
+//    function llenarCombo(combo, datos, valor, texto){
+//        combo.empty();
+//        combo.append( $('<option>').text('Seleccione una opción').val(-1) );
+//        for (var i = 0; i<datos.length; i++){
+//            var item = datos[i];
+//            var option = $('<option>'); //se crea un objeto option
+//            option.val(item[valor]);
+//            option.text(item[texto]);
+//            combo.append(option);
+//        }
+//    }
 
-        console.log("llenando tabla");
-        var encabezado = tabla.find('thead') ;
-        tabla.empty() ;
-        tabla.append(encabezado);
-        tabla.append($('<tbody>'));
-
-        contenedor.attr('hidden','hidden');
-        if(datos.length>0){
-            contenedor.removeAttr('hidden');
-            var celda = null ;
-
-            for(var i=0; i< datos.length;i ++) {
-                var fila = $('<tr>') ;
-                var registro = datos[i];
-                celda = $('<td>').text(registro.nombre);
-                fila.append(celda);
-                celda = $('<td>').text(registro.apellidos);
-                fila.append(celda);
-                celda = $('<td>').text(registro.correo);
-                fila.append(celda);
-                celda = $('<td>').text(registro.celular);
-                fila.append(celda);
-                celda = $('<td>').text(registro.telefono);
-                fila.append(celda);
-                celda = $('<td>').text(registro.tipoDoc);
-                fila.append(celda);
-                celda = $('<td>').text(registro.documento);
-                fila.append(celda);
-                celda = $('<td>').text(registro.nacionalidad);
-                fila.append(celda);
-                celda = $('<td>').text(registro.observaciones);
-                fila.append(celda);
-                tabla.append(fila);
-            }
-        }
-
-
-
-
-    }
 
     init(); //Se inicia la ejecución del programa
 
