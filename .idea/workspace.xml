@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="038cb213-9297-4d4b-b44e-d55644e88823" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/dia2/registro_lmrubio.html" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/dia2/css/bootstrap-grid.css" afterPath="$PROJECT_DIR$/dia2/css/bootstrap-grid.css" />
-      <change beforePath="$PROJECT_DIR$/dia2/registro.html" afterPath="$PROJECT_DIR$/dia2/registro.html" />
+      <change beforePath="$PROJECT_DIR$/dia2/registro_lmrubio.html" afterPath="$PROJECT_DIR$/dia2/registro_lmrubio.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -49,9 +47,12 @@
       <file leaf-file-name="registro_lmrubio.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dia2/registro_lmrubio.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="318">
-              <caret line="232" column="7" lean-forward="false" selection-start-line="232" selection-start-column="7" selection-end-line="232" selection-end-column="7" />
-              <folding />
+            <state relative-caret-position="187">
+              <caret line="281" column="35" lean-forward="true" selection-start-line="281" selection-start-column="35" selection-end-line="281" selection-end-column="35" />
+              <folding>
+                <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -184,7 +185,7 @@
       <workItem from="1518537035515" duration="7000" />
       <workItem from="1518538128001" duration="2137000" />
       <workItem from="1518560187367" duration="1100000" />
-      <workItem from="1518561538728" duration="5594000" />
+      <workItem from="1518561538728" duration="13148000" />
     </task>
     <task id="LOCAL-00001" summary="Reestructuración de Archivos">
       <created>1518538285104</created>
@@ -207,11 +208,18 @@
       <option name="project" value="LOCAL" />
       <updated>1518617206484</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Actualización Ejercicio 2">
+      <created>1518618263340</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1518618263340</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8838000" />
+    <option name="totallyTimeSpent" value="16392000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="10" y="25" width="1346" height="728" extended-state="0" />
@@ -318,9 +326,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dia2/registro_lmrubio.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="232" column="7" lean-forward="false" selection-start-line="232" selection-start-column="7" selection-end-line="232" selection-end-column="7" />
-          <folding />
+        <state relative-caret-position="187">
+          <caret line="281" column="35" lean-forward="true" selection-start-line="281" selection-start-column="35" selection-end-line="281" selection-end-column="35" />
+          <folding>
+            <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

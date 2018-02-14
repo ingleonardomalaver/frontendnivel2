@@ -97,6 +97,26 @@
 
         </div>
     </div>
+
+    <div id="divDatos" class="table-success" hidden>
+        <fieldset><legend>Datos Grabados Session Storage</legend></fieldset>
+        <table id="tblDatos">
+            <thead>
+            <tr>
+                <th>Nombre</th>
+                <td>Apellidos</td>
+                <td>Correo</td>
+                <td>Celular</td>
+                <td>Telefono</td>
+                <td>Tipo Documento</td>
+                <td>Documento</td>
+                <td>Nacionalidad</td>
+                <td>Observaciones</td>
+            </tr>
+            </thead>
+        </table>
+
+    </div>
 </div>
 
 <script src="js/jquery-3.3.1.min.js"></script>
@@ -143,7 +163,7 @@
             }
         }
         if (mensaje.length > 0){
-            console.error(mensaje);
+            console.log(mensaje);
             return;
         }
         guardarInformacion();
@@ -169,6 +189,13 @@
         }
         usuarios.push(usuario);
         sessionStorage.setItem('usuarios', JSON.stringify(usuarios));
+
+        //Llenar Tabla de Datos
+        usuarios = JSON.parse( sessionStorage.getItem('usuarios') );
+        var contenedor = $('#divDatos');
+        var tabla = $('#tblDatos');
+        llenarTabla(contenedor,tabla,usuarios);
+
     }
 
     function obtenerLabel(elemento) {
@@ -221,7 +248,46 @@
             combo.append(option);
         }
     }
+    function  llenarTabla(contenedor,tabla,datos){
 
+        console.log("llenando tabla");
+        var encabezado = tabla.find('thead') ;
+        tabla.empty() ;
+        tabla.append(encabezado);
+        contenedor.attr('hidden','hidden');
+        if(datos.length>0){
+            contenedor.removeAttr('hidden');
+            var celda = null ;
+
+            for(var i=0; i< datos.length;i ++) {
+                var fila = $('<tr>') ;
+                var registro = datos[i];
+                celda = $('<td>').text(registro.nombre);
+                fila.append(celda);
+                celda = $('<td>').text(registro.apellidos);
+                fila.append(celda);
+                celda = $('<td>').text(registro.correo);
+                fila.append(celda);
+                celda = $('<td>').text(registro.celular);
+                fila.append(celda);
+                celda = $('<td>').text(registro.telefono);
+                fila.append(celda);
+                celda = $('<td>').text(registro.tipoDoc);
+                fila.append(celda);
+                celda = $('<td>').text(registro.documento);
+                fila.append(celda);
+                celda = $('<td>').text(registro.nacionalidad);
+                fila.append(celda);
+                celda = $('<td>').text(registro.observaciones);
+                fila.append(celda);
+                tabla.append(fila);
+            }
+        }
+
+
+
+
+    }
 
     init(); //Se inicia la ejecución del programa
 
