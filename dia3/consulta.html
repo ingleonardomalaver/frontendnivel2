@@ -18,6 +18,78 @@
             <a href="registro.html" class="mr-3"><i class="fas fa-user-plus"></i> Registrar Usuarios</a> |
             <a href="index.html" class="ml-3"><i class="fas fa-home"></i> Volver al Inicio</a>
         </div>
+        <!-- Modal -->
+        <div class="modal fade" id="divDetalleModal">
+               <div id="formulario" class="container border-top pt-4">
+                            <div class="row">
+
+                                <div class="form-group col-md-4">
+                                    <label for="txtNombre">Nombre:</label>
+                                    <input type="text" class="form-control" id="txtNombre" required>
+                                </div>
+
+                                <div class="form-group col-md-4">
+                                    <label for="txtApellido">Apellidos:</label>
+                                    <input type="text" class="form-control" id="txtApellido" required>
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label for="txtCorreo">Correo:</label>
+                                    <input type="email" class="form-control" id="txtCorreo"
+                                           pattern="^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$" required>
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label for="txtCelular">Celular:</label>
+                                    <input type="text" class="form-control" id="txtCelular">
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label for="txtTelefono">Teléfono:</label>
+                                    <input type="text" class="form-control" id="txtTelefono">
+                                </div>
+
+                                <div class="form-group col-md-4">
+                                    <label class="d-block">Género</label>
+
+                                    <div class="custom-control custom-radio custom-control-inline">
+                                        <input type="radio" id="rbtnMasculino" name="rbtn-genero" class="custom-control-input">
+                                        <label class="custom-control-label" for="rbtnMasculino">Masculino</label>
+                                    </div>
+
+                                    <div class="custom-control custom-radio custom-control-inline">
+                                        <input type="radio" id="rbtnFemenino" name="rbtn-genero" class="custom-control-input">
+                                        <label class="custom-control-label" for="rbtnFemenino">Femenino</label>
+                                    </div>
+                                </div>
+
+
+                                <div class="form-group col-md-4">
+                                    <label for="cmbTipoDocumento">Tipo de Documento:</label>
+                                    <select id="cmbTipoDocumento" class="form-control" required></select>
+                                </div>
+
+
+                                <div class="form-group col-md-4">
+                                    <label for="txtDocumento">Documento:</label>
+                                    <input type="text" class="form-control" id="txtDocumento" required>
+                                </div>
+
+                                <div class="form-group col-md-4">
+                                    <label for="cmbNacionalidad">Nacionalidad:</label>
+                                    <select id="cmbNacionalidad" class="form-control" required></select>
+                                </div>
+
+                                <div class="form-group col-md-12">
+                                    <label for="txtObservaciones">Observaciones:</label>
+                                    <textarea id="txtObservaciones" class="form-control"></textarea>
+                                </div>
+
+
+
+
+
+</div>
+               </div>
+        </div>
+
 
         <div class="container">
             <table id="tblUsuarios" class="table table-striped">
@@ -29,6 +101,7 @@
                         <th id="thTipoDoc">Tipo Doc.</th>
                         <th id="thCelular">Celular</th>
                         <th id="thNacionalidad">Nacionalidad</th>
+                        <th id="thbtnDetalle">Detalle</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -41,7 +114,7 @@
 
     <script id="template-usuarios" type="text/x-handlebars-template">
         {{#each usuarios}}
-        <tr>
+            <tr data-fila ="{{@index}}">
             <td headers="thNombre">{{this.nombre}}</td>
             <td headers="thApellidos">{{this.apellidos}}</td>
             <td headers="thTipoDoc">{{this.tipoDoc}}</td>
@@ -54,6 +127,7 @@
             {{/if}}
 
             <td headers="thNacionalidad">{{this.nacionalidad}}</td>
+            <td><button class="btn btn-danger">Detalle</button></td>
         </tr>
         {{/each}}
     </script>
@@ -62,6 +136,25 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/handlebars.min-v4.0.11.js"></script>
     <script>
+
+        function mostrarModal(){
+
+            var fila =  parseInt($(this).parent().parent().attr('data-fila'));
+            var usuarios = sessionStorage.getItem('usuarios'); //String
+            usuarios = JSON.parse(usuarios);
+            console.log(usuarios[fila]);
+            var registro = usuarios[fila];
+            console.log("nombre"+registro.nombre);
+            var formulario =  $('#formulario') ;
+            formulario.find('#txtNombre').val(registro.nombre);
+            formulario.find('#txtApellido').val(registro.apellidos);
+            formulario.find('#txtCorreo').val(registro.correo);
+            formulario.find('#txtCelular').val(registro.celular);
+            $('#divDetalleModal').modal('show');
+
+
+
+        }
 
         var tblUsuarios = $('#tblUsuarios');
         var tbody = tblUsuarios.find('tbody');
@@ -90,34 +183,15 @@
 
             ///Render de las filas con Handlebars
             tbody.append( renderFilas({usuarios:usuarios}) );
+            console.log("cargando modal ");
+            tbody.find('button').on('click',mostrarModal);
 
-            /*
-             ///Render de las filas con jQuery
-            for (var i in usuarios){
-                var usuario = usuarios[i];
-                tbody.append( crearFila(usuario) );
+
             }
-            */
-
-        }
 
         function mostrarMensajeSinDatos(){
             console.log('No hay registros');
         }
-
-//        function crearFila(usuario){
-//            var tr = $('<tr>');
-//            var tdNombre = $('<td>')
-//                                .attr('headers', 'thNombre')
-//                                .text(usuario.nombre);
-//
-//            var tdApellidos = $('<td>').attr('headers', 'thApellidos').text(usuario.apellidos);
-//            var tdTipoDoc = $('<td>').attr('headers', 'thTipoDoc').text(usuario.tipoDoc);
-//            var tdDocumento = $('<td>').attr('headers', 'thDocumento').text(usuario.documento);
-//            var tdNacionalidad = $('<td>').attr('headers', 'thNacionalidad').text(usuario.nacionalidad);
-//            tr.append(tdNombre, tdApellidos, tdDocumento, tdNacionalidad);
-//            return tr;
-//        }
 
 
         cargarUsuarios();

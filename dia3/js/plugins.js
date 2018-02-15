@@ -16,7 +16,7 @@ $.fn.llenarCombo = function(data, texto, valor, defecto){
 
 
 $.fn.validarCorreo = function () {
-    console.log("validando correo");
+
     var elemento = $(this);
     if (elemento.attr('pattern')!==null){
         if( ! new RegExp(elemento.attr('pattern')).test(elemento.val()) ){

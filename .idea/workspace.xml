@@ -2,60 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="038cb213-9297-4d4b-b44e-d55644e88823" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/dia3/consulta.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dia3/css/bootstrap-grid.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dia3/css/bootstrap-grid.css.map" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dia3/css/bootstrap-grid.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dia3/css/bootstrap-grid.min.css.map" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dia3/css/bootstrap-reboot.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dia3/css/bootstrap-reboot.css.map" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dia3/css/bootstrap-reboot.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dia3/css/bootstrap-reboot.min.css.map" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dia3/css/bootstrap.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dia3/css/bootstrap.css.map" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dia3/css/bootstrap.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dia3/css/bootstrap.min.css.map" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dia3/css/fa-brands.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dia3/css/fa-brands.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dia3/css/fa-regular.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dia3/css/fa-regular.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dia3/css/fa-solid.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dia3/css/fa-solid.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dia3/css/fontawesome-all.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dia3/css/fontawesome-all.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dia3/css/fontawesome.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dia3/css/fontawesome.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dia3/descripcion.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dia3/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dia3/js/bootstrap.bundle.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dia3/js/bootstrap.bundle.js.map" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dia3/js/bootstrap.bundle.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dia3/js/bootstrap.bundle.min.js.map" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dia3/js/bootstrap.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dia3/js/bootstrap.js.map" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dia3/js/bootstrap.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dia3/js/bootstrap.min.js.map" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dia3/js/handlebars.min-v4.0.11.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dia3/js/jquery-3.3.1.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dia3/js/plugins.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dia3/registro.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dia3/webfonts/fa-brands-400.eot" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dia3/webfonts/fa-brands-400.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dia3/webfonts/fa-brands-400.ttf" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dia3/webfonts/fa-brands-400.woff" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dia3/webfonts/fa-brands-400.woff2" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dia3/webfonts/fa-regular-400.eot" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dia3/webfonts/fa-regular-400.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dia3/webfonts/fa-regular-400.ttf" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dia3/webfonts/fa-regular-400.woff" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dia3/webfonts/fa-regular-400.woff2" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dia3/webfonts/fa-solid-900.eot" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dia3/webfonts/fa-solid-900.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dia3/webfonts/fa-solid-900.ttf" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dia3/webfonts/fa-solid-900.woff" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dia3/webfonts/fa-solid-900.woff2" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/dia2/registro_lmrubio.html" afterPath="$PROJECT_DIR$/dia2/registro_lmrubio.html" />
+      <change beforePath="$PROJECT_DIR$/dia3/consulta.html" afterPath="$PROJECT_DIR$/dia3/consulta.html" />
+      <change beforePath="$PROJECT_DIR$/dia3/js/plugins.js" afterPath="$PROJECT_DIR$/dia3/js/plugins.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -96,21 +45,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="plugins.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dia3/js/plugins.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="27" column="13" lean-forward="false" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="registro.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dia3/registro.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="284">
-              <caret line="205" column="18" lean-forward="true" selection-start-line="205" selection-start-column="18" selection-end-line="205" selection-end-column="18" />
+            <state relative-caret-position="119">
+              <caret line="30" column="2" lean-forward="true" selection-start-line="30" selection-start-column="2" selection-end-line="98" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -119,8 +58,18 @@
       <file leaf-file-name="consulta.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dia3/consulta.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="1411">
+              <caret line="91" column="0" lean-forward="false" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="plugins.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dia3/js/plugins.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="476">
+              <caret line="28" column="1" lean-forward="true" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -139,8 +88,9 @@
         <option value="$PROJECT_DIR$/dia2/css/bootstrap-grid.css" />
         <option value="$PROJECT_DIR$/dia2/registro.html" />
         <option value="$PROJECT_DIR$/dia2/registro_lmrubio.html" />
-        <option value="$PROJECT_DIR$/dia3/js/plugins.js" />
         <option value="$PROJECT_DIR$/dia3/registro.html" />
+        <option value="$PROJECT_DIR$/dia3/js/plugins.js" />
+        <option value="$PROJECT_DIR$/dia3/consulta.html" />
       </list>
     </option>
   </component>
@@ -250,7 +200,7 @@
       <workItem from="1518537035515" duration="7000" />
       <workItem from="1518538128001" duration="2137000" />
       <workItem from="1518560187367" duration="1100000" />
-      <workItem from="1518561538728" duration="17019000" />
+      <workItem from="1518561538728" duration="21886000" />
     </task>
     <task id="LOCAL-00001" summary="Reestructuración de Archivos">
       <created>1518538285104</created>
@@ -287,11 +237,18 @@
       <option name="project" value="LOCAL" />
       <updated>1518629301097</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Adicion de la tabla para mostrar datos">
+      <created>1518649705626</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1518649705627</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20263000" />
+    <option name="totallyTimeSpent" value="25130000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="10" y="25" width="1346" height="728" extended-state="0" />
@@ -424,26 +381,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dia3/js/plugins.js">
+    <entry file="file://$PROJECT_DIR$/dia3/registro.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="27" column="13" lean-forward="false" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+        <state relative-caret-position="119">
+          <caret line="30" column="2" lean-forward="true" selection-start-line="30" selection-start-column="2" selection-end-line="98" selection-end-column="10" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dia3/registro.html">
+    <entry file="file://$PROJECT_DIR$/dia3/js/plugins.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="205" column="18" lean-forward="true" selection-start-line="205" selection-start-column="18" selection-end-line="205" selection-end-column="18" />
+        <state relative-caret-position="476">
+          <caret line="28" column="1" lean-forward="true" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dia3/consulta.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="1411">
+          <caret line="91" column="0" lean-forward="false" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
           <folding />
         </state>
       </provider>
