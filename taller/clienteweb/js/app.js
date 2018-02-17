@@ -78,7 +78,6 @@ var formularios = {
         return true ;
     },
 
-
     obtenerLabel: function (elemento) {
         var txtLabel = elemento.parent().find('label[for="' + elemento.attr('id') + '"]').text();
         return txtLabel.substring(0, txtLabel.length - 1);
@@ -102,7 +101,7 @@ var formularios = {
         console.log('validando select');
         if (elemento.val() === '-1') {
             elemento.addClass('is-invalid').removeClass('is-valid');
-            return 'Debe seleccionar una opción de ' + that.obtenerLabel(elemento) + '<br/>';
+            return 'Debe seleccionar una opción de ' + formularios.obtenerLabel(elemento) + '<br/>';
         }
         elemento.removeClass('is-invalid').addClass('is-valid');
         return '';
@@ -122,5 +121,16 @@ var formularios = {
                     break;
 
             }
-        }
+        },
+    limpiarFormulario:function(formulario){
+    console.log("limpiando formulario");
+    formulario.find('.is-valid, .is-invalid')
+        .removeClass('is-invalid')
+        .removeClass('is-valid');
+
+    formulario.find('input[type="text"], textarea, input[type="email"]').val('');
+    formulario.find('select').val('-1');
+    formulario.find('input[type="radio"]').prop('checked', false); //Quita la seleccion de radios y checks
+}
+
 };

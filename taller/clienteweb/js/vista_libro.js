@@ -6,7 +6,7 @@ var vistaLibro = {
         that = this ;
         that.consultarAutor();
         $('#btnGuardar').on('click', that.validarFormulario);
-
+        $('#btnLimpiar').on('click',that.inicializaFormulario) ;
     },
     consultarAutor: function () {
 
@@ -75,6 +75,10 @@ var vistaLibro = {
 
         }
 
+
+    },
+    inicializaFormulario: function(){
+       formularios.limpiarFormulario($('#formulario'));
 
     }
 };

@@ -3,18 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <title>Catálogo de Libros</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/fontawesome-all.min.css">
 </head>
-<body>
-
+<body class="bg-ligth">
 
 <div class="container-fluid">
     <div class="container text-center mt-5 pb-2">
-        <h1 class="mt-4 mb-4 text-center">Registro de Usuarios</h1>
+        <h1 class="mt-4 mb-4 text-center">Tienda de Libros</h1>
         <div class="container mb-2 text-right">
-            <a href="/libro/registro_libro.html" class="mr-3"><i class="fas fa-address-book"></i>Registro Libros</a>
-            <a href="/autor/registro_autor.html" class="mr-3"><i class="fas fa-address-book"></i>Registro Autor</a>
-            <a href="index.html" class="ml-3"><i class="fas fa-home"></i> Volver al Inicio</a>
+            <a href="libro/registro_libro.html" class="mr-3"><i class="fas fa-address-book"></i>Registro Libros</a>
+            <a href="autor/registro_autor.html" class="mr-3"><i class="fas fa-address-book"></i>Registro Autor</a>
         </div>
+    </div>
+</div>
+
+<div class="row" class="container border-top pt-4">
+    <div id="contenedorTarjetas" class="col-md-3">
+
+    </div>
+</div>
+
+<div id="div-plantilla" class="col-md-2" style="width: 30%;margin-bottom: 10px; " hidden>
+    <div class="card-body">
+        <h5 class="card-title">Titulo de la tarjeta</h5>
+        <h5 class="card-subtitle">Titulo de la tarjeta</h5>
+        <p class="card-footer">Color de la tarjeta: <span class="color-tarjeta"></span></p>
+        <a href="#" class="btn btn-danger"  >Detalle Libro</a>
     </div>
 </div>
 
