@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Consulta de Usuarios</title>
+
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/fontawesome-all.min.css">
+
+</head>
+<body>
+
+    <div class="container-fluid">
+        <h1 class="text-center mt-4 mb-4">Consulta de Libros</h1>
+        <div class="container mb-4 text-right">
+            <a href="registro_libro.html" class="mr-3"><i class="fas fa-user-plus"></i> Registrar Libro</a> |
+
+        </div>
+
+        <div class="container">
+            <table id="tblLibros" class="table table-striped">
+                <thead>
+                <tr>
+                    <th id="thNombre">Nombre</th>
+                    <th id="thAutor">Autor</th>
+                    <th id="thPrecio">Preecio</th>
+                    <th id="thPortada">Portada</th>
+                    <th id="thEditorial">Celular</th>
+                    <th id="thCantidadpaginas">Cantidad Paginas</th>
+                </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+            </table>
+        </div>
+    </div>
+
+
+    <script id="template-libros" type="text/x-handlebars-template">
+        {{#each libros}}
+        <tr>
+            <td headers="thNombre">{{this.nombre}}</td>
+            <td headers="thAutor">{{this.autor}}</td>
+            <td headers="thPrecio">{{this.precio}}</td>
+            <td headers="thPortada">{{this.portada}}</td>
+            <td headers="thEditorial">{{this.editorial}}</td>
+            <td headers="thCantidadPaginas">{{this.cantidadPaginas}}</td>
+
+        </tr>
+        {{/each}}
+    </script>
+
+    <script src="../js/app.js"></script>
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/controllibros.js"></script>
+    <script src="../js/controlAutor.js"></script>
+    <script src="../js/vista_libro.js"></script>
+    <script src="../js/sweetalert2.js"></script>
+    <script src="../js/plugins.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <script src="../js/handlebars.min-v4.0.11.js"></script>
+    <script>
+    var that = vistaLibro;
+    vistaLibro.consultarLibros();
+    </script>
+
+</body>
+</html>

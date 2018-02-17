@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Formulario de Registro Autores</title>
+
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+
+    <style>
+        .btn-enlinea{
+            position: relative;
+            margin-top:32px;
+        }
+    </style>
+</head>
+<body class="bg-ligth">
+
+
+<div class="container-fluid">
+    <div class="container text-center mt-5 pb-2">
+        <h1 class="mt-4 mb-4 text-center">Registro de Autores</h1>
+        <div class="container mb-2 text-right">
+            <a href="consulta.html" class="mr-3"><i class="fas fa-address-book"></i> Consultar Usuarios</a> |
+
+        </div>
+    </div>
+
+    <div id="formulario" class="container border-top pt-4">
+        <div class="row">
+
+            <div class="form-group col-md-4">
+                <label for="txtNombre">Nombre:</label>
+                <input type="text" class="form-control" id="txtNombre" required>
+            </div>
+
+            <div class="form-group col-md-4">
+                <label for="txtFoto">Foto:</label>
+                <input type="text" class="form-control" id="txtFoto" required>
+            </div>
+            <div class="form-group col-md-4">
+                <label for="txtBiografia">Bioagrafia:</label>
+                <textarea class="form-control" id="txtBiografia" required></textarea>
+            </div>
+            <div class="form-group col-md-4">
+                <label for="txtPremios">Premios:</label>
+                <textarea type="text" class="form-control" id="txtPremios" required></textarea>
+            </div>
+            <div class="form-group col-md-4">
+                <label for="txtFechaNacimiento">Fecha Nacimiento:</label>
+                <input type="text" class="form-control" id="txtFechaNacimiento" required>
+            </div>
+            <div class="form-group col-md-4">
+                <label for="txtEdad">Edad:</label>
+                <input type="number" class="form-control" id="txtEdad" required>
+            </div>
+
+
+            <div class="form-group col-md-12 text-right">
+                <button id="btnGuardar" class="btn btn-success btn-enlinea"><i class="fas fa-save"></i> Guardar</button>
+                <button id="btnLimpiar" class="btn btn-danger btn-enlinea"><i class="fas fa-times"></i> Limpiar</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+<script src="../js/app.js"></script>
+<script src="../js/jquery-3.3.1.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/controlAutor.js"></script>
+<script src="../js/vista_autor.js"></script>
+<script src="../js/sweetalert2.js"></script>
+<script src="../js/plugins.js"></script>
+
+</body>
+</html>

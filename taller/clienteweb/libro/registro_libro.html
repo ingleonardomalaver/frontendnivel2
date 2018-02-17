@@ -1,0 +1,91 @@
+|<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Formulario de Registro Libros</title>
+
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+
+
+    <style>
+        .btn-enlinea{
+            position: relative;
+            margin-top:32px;
+        }
+    </style>
+</head>
+<body class="bg-ligth">
+
+
+<div class="container-fluid">
+    <div class="container text-center mt-5 pb-2">
+        <h1 class="mt-4 mb-4 text-center">Registro de Libros</h1>
+        <div class="container mb-2 text-right">
+            <a href="consulta.html" class="mr-3"><i class="fas fa-address-book"></i> Consultar Libro</a> |
+
+        </div>
+    </div>
+
+    <div id="formulario" class="container border-top pt-4">
+        <div class="row">
+
+            <div class="form-group col-md-4">
+                <label for="txtNombre">Nombre:</label>
+                <input type="text" class="form-control" id="txtNombre" required>
+            </div>
+
+            <div class="form-group col-md-4">
+                <label for="cmbAutor">Autor:</label>
+                <select id="cmbAutor" class="form-control" required>
+                </select>
+            </div>
+
+            <div class="form-group col-md-4">
+                <label for="txtPrecio">Precio:</label>
+                <input type="number" class="form-control" id="txtPrecio" required>
+            </div>
+
+            <div class="form-group col-md-4">
+                <label for="txtPortada">Portada:</label>
+                <input type="text" class="form-control" id="txtPortada" required>
+            </div>
+
+            <div class="form-group col-md-4">
+                <label for="txtFechaPublicacion">Fecha Publicacion</label>
+                <input type="text" class="form-control" id="txtFechaPublicacion" required>
+            </div>
+
+            <div class="form-group col-md-4">
+                <label for="txtEditorial">Editorial</label>
+                <input type="text" class="form-control" id="txtEditorial" required>
+            </div>
+
+            <div class="form-group col-md-4">
+                <label for="txtCantidadPaginas">Cantidad Páginas</label>
+                <input type="text" class="form-control" id="txtCantidadPaginas" required>
+            </div>
+
+            <div class="form-group col-md-12 text-right">
+                <button id="btnGuardar" class="btn btn-success btn-enlinea"><i class="fas fa-save"></i> Guardar</button>
+                <button id="btnLimpiar" class="btn btn-danger btn-enlinea"><i class="fas fa-times"></i> Limpiar</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+<script src="../js/app.js"></script>
+<script src="../js/jquery-3.3.1.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/controllibros.js"></script>
+<script src="../js/controlAutor.js"></script>
+<script src="../js/vista_libro.js"></script>
+<script src="../js/sweetalert2.js"></script>
+<script src="../js/plugins.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+<script>vistaLibro.init(); //Se inicia la ejecución del programa</script>
+</body>
+</html>

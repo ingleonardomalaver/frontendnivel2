@@ -6,106 +6,21 @@
 </head>
 <body>
 
-<div>
-    <input type="text" id="txtNombreLibro">
-    <select id="cmbAutor">
-        <option value="-1">Autor</option>
-    </select>
-    <input type="text" id="txtPrecio">
-    <input type="text" id="txtPortada">
-    <button id="btnGuardarLibro">Guardar Libro</button>
-</div>
 
-<br>
-
-<div>
-    <input type="text" id="txt">
-    <button id="btnGuardarAutor">Guardar Autor</button>
+<div class="container-fluid">
+    <div class="container text-center mt-5 pb-2">
+        <h1 class="mt-4 mb-4 text-center">Registro de Usuarios</h1>
+        <div class="container mb-2 text-right">
+            <a href="/libro/registro_libro.html" class="mr-3"><i class="fas fa-address-book"></i>Registro Libros</a>
+            <a href="/autor/registro_autor.html" class="mr-3"><i class="fas fa-address-book"></i>Registro Autor</a>
+            <a href="index.html" class="ml-3"><i class="fas fa-home"></i> Volver al Inicio</a>
+        </div>
+    </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script>
 
-    (function(){
 
-
-        $('#btnGuardarAutor').on('click', function () {
-            $.ajax({
-                url:'http://localhost:5000/autores/registrar',
-                type:'POST',
-                data:{
-                    nombre:$('#txtNombreAutor').val()
-                },
-                dataType:'json',
-                success:function(resultado){
-                    console.log(resultado);
-                },
-                error:function (err) {
-                    console.error(err);
-                }
-            });
-        });
-
-        $.ajax({
-            url:'http://localhost:5000/libros/consultar',
-            type:'GET',
-            dataType:'json',
-            success:function(resultado){
-                console.log(resultado);
-            },
-            error:function (err) {
-                console.error(err);
-            }
-        });
-
-        $.ajax({
-            url:'http://localhost:5000/autores/consultar',
-            type:'GET',
-            dataType:'json',
-            success:function(resultado){
-                console.log('Autores: ', resultado);
-                var cmbAutores= $('#cmbAutor') ;
-                for(var i=0;i<resultado.data.length;i++){
-                    var registro = resultado.data[i];
-                    var opcion = $('<option>');
-                    opcion.val(registro._id);
-                    opcion.text(registro.nombre);
-                    cmbAutores.append(opcion);
-
-                }
-
-            },
-            error:function (err) {
-                console.error(err);
-            }
-        });
-
-
-        $('#btnGuardarLibro').on('click', function () {
-            $.ajax({
-                url:'http://localhost:5000/libros/registrar',
-                type:'POST',
-                data:{
-                    nombre:$('#txtNombreLibro').val() ,
-                    autor:$('#cmbAutor').val(),
-                    precio:$('#txtPrecio').val(),
-                    portada: $('#txtPortada').val()
-                },
-                dataType:'json',
-                success:function(resultado){
-                    console.log(resultado);
-                },
-                error:function (err) {
-                    console.error(err);
-                }
-            });
-        });
-
-
-
-    })();
-
-
-</script>
 </body>
 </html>

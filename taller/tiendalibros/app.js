@@ -161,10 +161,12 @@ function construirRespuestaDatos(data, mensaje) {
 }
 
 
+//mongodb://jsvanegas:123@ds225028.mlab.com:25028/tiendalibros
+MongoClient.connect('mongodb://administrador:Admmlab2105.@ds053784.mlab.com:53784/mdlmrubio', function(err, client){
 
-MongoClient.connect('mongodb://jsvanegas:123@ds225028.mlab.com:25028/tiendalibros', function(err, client){
-	if (err) { return console.log(err); }
-	db = client.db('tiendalibros');
+	if (err) {
+	    return err;}
+	db = client.db('mdlmrubio');
 	app.listen(5000);
 	console.log('Servidor corriendo en puerto 5000');	
 });
