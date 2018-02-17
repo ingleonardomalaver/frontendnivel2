@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="038cb213-9297-4d4b-b44e-d55644e88823" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/taller/clienteweb/js/vista_catalogo.js" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/taller/clienteweb/autor/registro_autor.html" afterPath="$PROJECT_DIR$/taller/clienteweb/autor/registro_autor.html" />
-      <change beforePath="$PROJECT_DIR$/taller/clienteweb/index.html" afterPath="$PROJECT_DIR$/taller/clienteweb/index.html" />
-      <change beforePath="$PROJECT_DIR$/taller/clienteweb/js/app.js" afterPath="$PROJECT_DIR$/taller/clienteweb/js/app.js" />
-      <change beforePath="$PROJECT_DIR$/taller/clienteweb/js/vista_libro.js" afterPath="$PROJECT_DIR$/taller/clienteweb/js/vista_libro.js" />
-      <change beforePath="$PROJECT_DIR$/taller/clienteweb/libro/registro_libro.html" afterPath="$PROJECT_DIR$/taller/clienteweb/libro/registro_libro.html" />
+      <change beforePath="$PROJECT_DIR$/taller/clienteweb/js/controllibros.js" afterPath="$PROJECT_DIR$/taller/clienteweb/js/controllibros.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,7 +14,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/taller/clienteweb/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="442">
@@ -49,41 +44,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="consulta.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/taller/clienteweb/autor/consulta.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="4" lean-forward="false" selection-start-line="8" selection-start-column="4" selection-end-line="9" selection-end-column="65" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="registro_autor.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/taller/clienteweb/autor/registro_autor.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="26" column="108" lean-forward="false" selection-start-line="26" selection-start-column="108" selection-end-line="26" selection-end-column="108" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="registro.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dia3/registro.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="283">
               <caret line="134" column="2" lean-forward="true" selection-start-line="134" selection-start-column="2" selection-end-line="139" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="registro.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dia2/registro.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="32" column="0" lean-forward="true" selection-start-line="31" selection-start-column="5" selection-end-line="32" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -102,8 +67,38 @@
       <file leaf-file-name="vista_libro.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/taller/clienteweb/js/vista_libro.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-255">
-              <caret line="9" column="6" lean-forward="true" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+            <state relative-caret-position="230">
+              <caret line="47" column="28" lean-forward="true" selection-start-line="47" selection-start-column="28" selection-end-line="47" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="controlAutor.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/taller/clienteweb/js/controlAutor.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="426">
+              <caret line="31" column="70" lean-forward="true" selection-start-line="29" selection-start-column="7" selection-end-line="31" selection-end-column="70" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="controllibros.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/taller/clienteweb/js/controllibros.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="130">
+              <caret line="31" column="12" lean-forward="true" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="consulta.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/taller/clienteweb/libro/consulta.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="419">
+              <caret line="68" column="26" lean-forward="false" selection-start-line="68" selection-start-column="26" selection-end-line="68" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -159,7 +154,6 @@
         <option value="$PROJECT_DIR$/taller/clienteweb/js/plugins.js" />
         <option value="$PROJECT_DIR$/taller/clienteweb/js/vista_autor.js" />
         <option value="$PROJECT_DIR$/taller/clienteweb/js/controlAutor.js" />
-        <option value="$PROJECT_DIR$/taller/clienteweb/js/controllibros.js" />
         <option value="$PROJECT_DIR$/taller/clienteweb/libro/consulta.html" />
         <option value="$PROJECT_DIR$/taller/clienteweb/libro/registro_libro.html" />
         <option value="$PROJECT_DIR$/taller/clienteweb/autor/registro_autor.html" />
@@ -167,6 +161,7 @@
         <option value="$PROJECT_DIR$/taller/clienteweb/js/app.js" />
         <option value="$PROJECT_DIR$/taller/clienteweb/js/vista_catalogo.js" />
         <option value="$PROJECT_DIR$/taller/clienteweb/index.html" />
+        <option value="$PROJECT_DIR$/taller/clienteweb/js/controllibros.js" />
       </list>
     </option>
   </component>
@@ -316,7 +311,7 @@
       <workItem from="1518560187367" duration="1100000" />
       <workItem from="1518561538728" duration="29097000" />
       <workItem from="1518732775128" duration="4960000" />
-      <workItem from="1518873998603" duration="34121000" />
+      <workItem from="1518873998603" duration="34566000" />
     </task>
     <task id="LOCAL-00001" summary="Reestructuración de Archivos">
       <created>1518538285104</created>
@@ -388,11 +383,18 @@
       <option name="project" value="LOCAL" />
       <updated>1518907640057</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Ejercicio dia 4">
+      <created>1518910851488</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1518910851488</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71422000" />
+    <option name="totallyTimeSpent" value="71867000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1366" y="-2" width="1920" height="1082" extended-state="6" />
@@ -645,14 +647,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/taller/clienteweb/js/controlAutor.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="21" column="4" lean-forward="false" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/taller/clienteweb/js/plugins.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -673,22 +667,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="697">
           <caret line="80" column="42" lean-forward="true" selection-start-line="80" selection-start-column="42" selection-end-line="80" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/taller/clienteweb/js/controllibros.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="19" column="3" lean-forward="false" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/taller/clienteweb/libro/consulta.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="521">
-          <caret line="38" column="14" lean-forward="true" selection-start-line="38" selection-start-column="14" selection-end-line="38" selection-end-column="14" />
           <folding />
         </state>
       </provider>
@@ -805,14 +783,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/taller/clienteweb/js/vista_libro.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-255">
-          <caret line="9" column="6" lean-forward="true" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/taller/clienteweb/js/vista_catalogo.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="487">
@@ -825,6 +795,38 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
           <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taller/clienteweb/js/controlAutor.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="426">
+          <caret line="31" column="70" lean-forward="true" selection-start-line="29" selection-start-column="7" selection-end-line="31" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taller/clienteweb/libro/consulta.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="419">
+          <caret line="68" column="26" lean-forward="false" selection-start-line="68" selection-start-column="26" selection-end-line="68" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taller/clienteweb/js/vista_libro.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="47" column="28" lean-forward="true" selection-start-line="47" selection-start-column="28" selection-end-line="47" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taller/clienteweb/js/controllibros.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="31" column="12" lean-forward="true" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="12" />
           <folding />
         </state>
       </provider>

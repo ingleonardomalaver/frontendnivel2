@@ -13,7 +13,8 @@ var controlLibro = {
             dataType:'json',
             success:retorno,
             error:function (err) {
-                console.error(err);
+                if (err.readyState != undefined && err.readyState == 0)
+                    mensajes.alerta_sw('Error', 'Servicio No Disponible');
             }
         });
     },
@@ -25,8 +26,9 @@ var controlLibro = {
            type:'GET',
            dataType:'json',
            success:retorno,
-           error:function (err) {
-               console.error(err);
+           error: function (err) {
+               if (err.readyState != undefined && err.readyState == 0)
+                   mensajes.alerta_sw('Error', 'Servicio No Disponible');
            }
        });
 
