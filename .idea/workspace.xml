@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="038cb213-9297-4d4b-b44e-d55644e88823" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/dia3/consumoWS.html" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/dia3/registro.html" afterPath="$PROJECT_DIR$/dia3/registro.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -249,7 +247,7 @@
       <workItem from="1518560187367" duration="1100000" />
       <workItem from="1518561538728" duration="29097000" />
       <workItem from="1518732775128" duration="4960000" />
-      <workItem from="1518873998603" duration="22000" />
+      <workItem from="1518873998603" duration="46000" />
     </task>
     <task id="LOCAL-00001" summary="Reestructuración de Archivos">
       <created>1518538285104</created>
@@ -300,11 +298,18 @@
       <option name="project" value="LOCAL" />
       <updated>1518654604109</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Ejercicio dia 4">
+      <created>1518874040734</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1518874040734</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37323000" />
+    <option name="totallyTimeSpent" value="37347000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="8" y="25" width="1346" height="728" extended-state="0" />
@@ -341,7 +346,8 @@
     <MESSAGE value="Actualización Ejercicio 2" />
     <MESSAGE value="Adicion de la tabla para mostrar datos" />
     <MESSAGE value="manejo de dialogo modal" />
-    <option name="LAST_COMMIT_MESSAGE" value="manejo de dialogo modal" />
+    <MESSAGE value="Ejercicio dia 4" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ejercicio dia 4" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
