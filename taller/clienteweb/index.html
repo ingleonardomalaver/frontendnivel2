@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Catálogo de Libros</title>
+</head>
+<body>
+
+<div>
+    <input type="text" id="txtNombreLibro">
+    <select id="cmbAutor">
+        <option value="-1">Autor</option>
+    </select>
+    <input type="text" id="txtPrecio">
+    <input type="text" id="txtPortada">
+    <button id="btnGuardarLibro">Guardar Libro</button>
+</div>
+
+<br>
+
+<div>
+    <input type="text" id="txt">
+    <button id="btnGuardarAutor">Guardar Autor</button>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script>
+
+    (function(){
+
+
+        $('#btnGuardarAutor').on('click', function () {
+            $.ajax({
+                url:'http://localhost:5000/autores/registrar',
+                type:'POST',
+                data:{
+                    nombre:$('#txtNombreAutor').val()
+                },
+                dataType:'json',
+                success:function(resultado){
+                    console.log(resultado);
+                },
+                error:function (err) {
+                    console.error(err);
+                }
+            });
+        });
+
+        $.ajax({
+            url:'http://localhost:5000/libros/consultar',
+            type:'GET',
+            dataType:'json',
+            success:function(resultado){
+                console.log(resultado);
+            },
+            error:function (err) {
+                console.error(err);
+            }
+        });
+
+        $.ajax({
+            url:'http://localhost:5000/autores/consultar',
+            type:'GET',
+            dataType:'json',
+            success:function(resultado){
+                console.log('Autores: ', resultado);
+                var cmbAutores= $('#cmbAutor') ;
+                for(var i=0;i<resultado.data.length;i++){
+                    var registro = resultado.data[i];
+                    var opcion = $('<option>');
+                    opcion.val(registro._id);
+                    opcion.text(registro.nombre);
+                    cmbAutores.append(opcion);
+
+                }
+
+            },
+            error:function (err) {
+                console.error(err);
+            }
+        });
+
+
+        $('#btnGuardarLibro').on('click', function () {
+            $.ajax({
+                url:'http://localhost:5000/libros/registrar',
+                type:'POST',
+                data:{
+                    nombre:$('#txtNombreLibro').val() ,
+                    autor:$('#cmbAutor').val(),
+                    precio:$('#txtPrecio').val(),
+                    portada: $('#txtPortada').val()
+                },
+                dataType:'json',
+                success:function(resultado){
+                    console.log(resultado);
+                },
+                error:function (err) {
+                    console.error(err);
+                }
+            });
+        });
+
+
+
+    })();
+
+
+</script>
+</body>
+</html>
