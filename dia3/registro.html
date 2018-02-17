@@ -245,6 +245,17 @@
 //        }
 //    }
 
+    function generarDuplicado (){
+
+        $.ajax(
+            {
+                url: 'http://10.43.51.7:8080/JasperRecibo-1.0-SNAPSHOT/ws/consultarRecibo',
+                method:'POST'
+
+            });
+
+    }
+
 
     init(); //Se inicia la ejecución del programa
 
