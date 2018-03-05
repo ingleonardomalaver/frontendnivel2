@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Carrito Compras</title>
+
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/fontawesome-all.min.css">
+
+</head>
+<body>
+    <div class="container-fluid">
+        <h1 class="text-center mt-4 mb-4">Detalle Compras</h1>
+        <div class="container mb-4 text-right">
+            <a href="../index.html" class="mr-3"><i class="fas fa-home"></i> Inicio</a> |
+        </div>
+        <div class="row" id="listadoCompras">
+
+        </div>
+        <div id="div-detalle" class="row col-md-4 "  style="width: 30%;margin-bottom: 10px; " hidden >
+            <div class="card-body">
+                <img alt="" class="img-fluid">
+                <h5 class="card-title">Titulo de la tarjeta</h5>
+                <h5 class="card-subtitle">Titulo de la tarjeta</h5>
+                <p class="card-footer">Autor: <span class="color-tarjeta"></span></p>
+                <input type="text" id="cantidad" value="0">
+                <button id="sumar">+</button>
+                <button id="restar">-</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <script src="../js/app.js"></script>
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/controllibros.js"></script>
+    <script src="../js/vista_libro.js"></script>
+    <script src="../js/sweetalert2.js"></script>
+    <script src="../js/plugins.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <script src="../js/handlebars.min-v4.0.11.js"></script>
+    <script>
+    var that = vistaLibro;
+    vistaLibro.carritoCompras('+');
+    </script>
+
+</body>
+</html>

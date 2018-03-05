@@ -4,12 +4,7 @@ var controlLibro = {
         $.ajax({
             url:'http://localhost:5000/libros/registrar',
             type:'POST',
-            data:{
-                nombre:$('#txtNombreLibro').val() ,
-                autor:$('#cmbAutor').val(),
-                precio:$('#txtPrecio').val(),
-                portada:$('#txtPortada').val()
-            },
+            data:data,
             dataType:'json',
             success:retorno,
             error:function (err) {

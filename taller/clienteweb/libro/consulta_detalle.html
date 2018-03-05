@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Consulta de Usuarios</title>
+
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/fontawesome-all.min.css">
+
+</head>
+<body>
+    <div class="container-fluid">
+        <h1 class="text-center mt-4 mb-4">Consulta Detalle Libro</h1>
+        <div class="container mb-4 text-right">
+            <a href="../index.html" class="mr-3"><i class="fas fa-home"></i> Inicio</a> |
+        </div>
+        <div class="container">
+
+            <div id="div-detalle" class="row col-md-4 "  style="width: 30%;margin-bottom: 10px; " >
+                <div class="card-body">
+                    <img alt="" class="img-fluid">
+                    <h5 class="card-title">Titulo de la tarjeta</h5>
+                    <h5 class="card-subtitle">Titulo de la tarjeta</h5>
+                    <p class="card-footer">Autor: <span class="color-tarjeta"></span></p>
+
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+            </div>
+
+            </div>
+
+
+        </div>
+    </div>
+
+    <script src="../js/app.js"></script>
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/controllibros.js"></script>
+    <script src="../js/vista_libro.js"></script>
+    <script src="../js/sweetalert2.js"></script>
+    <script src="../js/plugins.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <script src="../js/handlebars.min-v4.0.11.js"></script>
+    <script>
+    var that = vistaLibro;
+    vistaLibro.cargadetalleLibro();
+    </script>
+
+</body>
+</html>

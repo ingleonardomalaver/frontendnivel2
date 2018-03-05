@@ -21,7 +21,6 @@ var controlAutor = {
      },
     consultarAutor: function(data ,retorno) {
 
-      console.log("consultando autor");
     $.ajax({
         url: 'http://localhost:5000/autores/consultar',
         type: 'GET',
